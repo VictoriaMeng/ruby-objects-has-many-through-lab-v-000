@@ -12,5 +12,6 @@ class Artist
   end
 
   def genres
+    songs.map { |song| song.genre }.unique
   end
 end
